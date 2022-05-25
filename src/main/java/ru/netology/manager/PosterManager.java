@@ -31,12 +31,7 @@ public class PosterManager {
     }
 
     public MovieItem[] findLast() {
-        int resultLength;
-        if (lastMovies < 10 && lastMovies > 0) {
-            resultLength = lastMovies;
-        } else {
-            resultLength = 10;
-        }
+        int resultLength = lastMovies;
 
         MovieItem[] result = new MovieItem[resultLength];
         for (int i = 0; i < result.length; i++) {
